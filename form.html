@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Resumé formulaire</title>
+</head>
+
+<body>
+    <form action="index.html" method="post">
+        <fieldset>
+            <legend>Vos infos</legend>
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" placeholder="Entrer votre nom">
+            <label for="prenom">Prenom</label>
+            <input type="text" id="prenom"> <br> <br>
+            <label for="tel">Telephone</label>
+            <input type="number" id="tel" required> <br> <br>
+            <label for="mail">email</label>
+            <input type="email" id="mail" placeholder="email@.com"> <br> <br>
+            <p>Etes-vous marié?</p>
+            <input type="radio" id="oui" name="marier">
+            <label for="oui">oui</label>
+            <input type="radio" id="non" name="marier">
+            <label for="non">non</label> <br> <br>
+            <label for="date">Votre date de naissance</label>
+            <input type="date" id="date"> <br> <br>
+        </fieldset> <br>
+        <fieldset>
+            <legend>Vos choix</legend>
+            <p>-Quelle est votre couleur preferée?</p>
+            <input type="checkbox" id="vert" name="couleur" value="vert">
+            <label for="vert">vert</label>
+            <input type="checkbox" id="jaune" name="couleur" value="jaune">
+            <label for="jaune">Jaune</label>
+            <input type="checkbox" id="rouge" name="couleur" value="rouge">
+            <label for="rouge">Rouge</label>
+            <input type="checkbox" id="bleu" name="couleur" value="bleu">
+            <label for="bleu">Bleu</label>
+            <input type="checkbox" id="rose" name="couleur" value="rose">
+            <label for="rose">Rose</label> <br> <br>
+            <p>-Quel est votre pays?</p>
+        <select name="pays" id="pays">
+            <optgroup label="Afrique">
+                <option value="senegal">Senegal</option>
+                <option value="Maroc">Maroc</option>
+            </optgroup>
+            <optgroup label="Europe">
+                <option value="Italie">Italie</option>
+                <option value="Espagne">Espagne</option>
+                <option value="France">France</option>
+            </optgroup>
+            <optgroup label="Asie">
+                <option value="Phillipines" selected>Phillipines</option>
+                <option value="Japon" selected>Japon</option>
+                <option value="Thaillande">Thaillande</option>
+            </optgroup>
+        </select> <br><br>
+            <label for="comm">Commentaire</label>
+            <textarea name="comm" id="comm"></textarea> <br> <br>
+            <label for="pass" hidden>password</label>
+            <input type="password" id="pass" hidden> <br> <br>
+            <label for="url">vote site</label>
+        <input type="url" id="url"> <br> <br>
+        <label for="file">Telecharger votre Cv</label>
+        <input type="file" id="file"> <br>
+        </fieldset>
+        <label for="search" hidden>search</label>
+        <input type="search" id="search" hidden> <br>
+        <button value="submit">Envoyer</button>
+
+    </form>
+</body>
+
+</html>
